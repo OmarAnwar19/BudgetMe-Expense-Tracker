@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins";
+}
+
+body {
+  font-family: "Poppins";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #cfdaf6;
+}
+
+.container {
+  width: 300px;
+  height: 650px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+
+  -webkit-box-shadow: 0 0 70px -10px black;
+  box-shadow: 0 0 70px -10px black;
+  border-radius: 30px;
+  padding: 20px;
+  padding-bottom: 20px;
+
+  background: lightblue;
+}
+
+.app-title {
+  width: 300px;
+  margin-bottom: 25px;
+  border-bottom: 3px solid white;
+}
+
+.account {
+  width: 300px;
+  margin-bottom: 25px;
+}
+
+.sub-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 430px;
+  color: white;
+  background-color: rgb(60, 60, 236);
+  padding: 20px;
+  padding-bottom: 50px;
+  border-radius: 30px;
+}
+
+.items-ul {
+  height: 380px;
+  /*added these here*/
+  margin-bottom: 10px;
+  margin-top: 10px;
+  overflow-y: scroll;
+  list-style: none;
+  text-align: left;
+}
+
+.add-items {
+  position: relative;
+  top: -180px;
+  width: 300px;
+  padding-top: 10px;
+}
+
+.main-button {
+  position: absolute;
+  top: 160px;
+  left: 132px;
+  padding: 5px 10px 5px 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  background-color: white;
+  font-size: 20px;
+}
+
+.item-input {
+  opacity: 0;
+  position: relative;
+  top: -30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: lightblue;
+  border-radius: 30px;
+  transition: all 0.2s ease;
+}
+
+.item-input button {
+  padding: 5px 10px 5px 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  background-color: white;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-input input {
+  width: 115px;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: 1px solid black;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.items-ul:hover {
+  cursor: pointer;
+}
+
+.active {
+  transition: all 0.2s ease;
+  opacity: 1;
+}
+
+.income {
+  color: #00ff3c;
+}
+
+.expense {
+  color: #ff0000;
+}
+
+.app-title span {
+  color: rgb(60, 60, 236);
+}
+
+/*added these here*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar {
+  background: transparent;
+}
