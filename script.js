@@ -47,12 +47,8 @@ addExpenseButton.addEventListener("click", () => {
 
 clearButton.addEventListener("click", () => {
   itemsList.innerHTML = "";
-
   resetInput();
   localStorage.clear();
-
-  balance = 10000;
-  balanceAmount.textContent = `$${balance}`;
 });
 
 itemsList.addEventListener("dblclick", (e) => {
