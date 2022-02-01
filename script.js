@@ -13,7 +13,9 @@ itemsList.innerHTML = "";
 let balance = 10000;
 let itemsCounter = 0;
 
-parseStorage();
+if ("obj1" in localStorage) {
+  parseStorage();
+}
 
 mainButton.addEventListener("click", () => {
   if (popUpMenu.classList.contains("active")) {
@@ -45,8 +47,12 @@ addExpenseButton.addEventListener("click", () => {
 
 clearButton.addEventListener("click", () => {
   itemsList.innerHTML = "";
+
   resetInput();
   localStorage.clear();
+
+  balance = 10000;
+  balanceAmount.textContent = `$${balance}`;
 });
 
 itemsList.addEventListener("dblclick", (e) => {
